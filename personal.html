@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dr. Abanoub Emad - Expert Physiotherapist and Nutritionist offering personalized rehabilitation and dietary plans in Egypt.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Dr. Abanoub Emad | د. ابانوب عماد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header role="banner">
+        <div class="profile-photo-container">
+            <img src="Dr.AbanoubEmad.jpeg" alt="Dr. Abanoub Emad" class="profile-photo" loading="lazy">
+        </div>
+        <h1 id="title" aria-live="polite">Dr. Abanoub Emad</h1>
+        <button id="toggle-lang-btn">العربية</button>
+    </header>
+
+    <section class="intro">
+        <p id="intro-text">
+            Welcome! I'm Dr. Abanoub Emad, Physiotherapist and Nutritionist, I'm here to guide you towards a better,
+            pain-free and healthy life.
+        </p>
+    </section>
+
+    <section class="services">
+        <h2 id="services-title">My Services</h2>
+        <div class="service-cards">
+            <article class="card">
+                <h3 data-translate="physio">العلاج الطبيعي:</h3>
+                <ul id="physio-services"></ul>
+            </article>
+            <article class="card">
+                <h3 data-translate="nutrition">استشارات التغذية:</h3>
+                <ul id="nutrition-services"></ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="booking">
+        <h2 id="booking-title">Book an Appointment</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="age-label">Age</label>
+                <input type="number" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city" id="city-label">City</label>
+                <input type="text" id="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service" id="service-label">Service</label>
+                <select id="service"></select>
+            </div>
+            <div class="form-group">
+                <label for="date" id="date-label">Date & Time</label>
+                <input type="datetime-local" id="date" required>
+            </div>
+
+            <button type="submit" id="book-now-btn">Book Now</button>
+        </form>
+    </section>
+
+    <section class="contact">
+        <h2 id="contact-title">Contact Me</h2>
+        <address>
+            Phone: <a href="tel:01277971318">01277971318</a><br>
+            Facebook: <a href="https://facebook.com/DrAbanoubEmad" target="_blank" rel="noopener"
+                id="facebook-link">Visit my page</a><br>
+            WhatsApp: <a href="https://wa.me/201277971318" target="_blank">Chat on WhatsApp</a>
+        </address>
+        <p id="feedback-note">
+            <span id="feedback-text">* Please leave your feedback through </span>
+            <a href="https://wa.me/201277971318" target="_blank" rel="noopener noreferrer"
+                id="whatsapp-link">WhatsApp</a>
+            <span id="feedback-exclamation">!</span>
+        </p>
+    </section>
+
+    <script derfer src="script.js"></script>
+</body>
+
+</html>
